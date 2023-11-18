@@ -31,4 +31,3 @@ node_modules/
 *.txt
 *.csv
 build/
-my.patch
