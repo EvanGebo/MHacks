@@ -28,6 +28,5 @@ env/*
 node_modules/
 .ipynb_checkpoints/
 *.ipynb
-*.txt
 *.csv
 build/
