@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:hover {background-color: #ddd;}
+</style>
+</head>
+<body>
+
+<h2>Student Performance Projection</h2>
+
+
+<form action="/submit/?target=/" enctype="multipart/form-data">
+    <label for="name">First Name</label>
+    <input type="text" id="name" name="first_name" placeholder={{first}}>
+
+    <label for="name">Last Name</label>
+    <input type="text" id="name" name="last_name" placeholder={{last}}>
+  
+    <label for="class">Class</label>
+    <input type="int" id="class" name="class" placeholder={{course}}>
+  
+    <input type="submit" value="Submit">
+  </form>
+
+<table>
+  <tr>
+    <th>StudentId</th>
+    <th>Grade</th>
+    <th>Interaction</th>
+  </tr>
+  <!-- Sample rows -->
+  {% for student in students %}
+  <tr>
+    <td>{student.id}</td>
+    <td>{student.grade}</td>
+    <td>{student.interaction}</td>
+  </tr>
+  {%endfor%}
+</table>
+
+</body>
+</html>
