@@ -52,3 +52,21 @@
 .rounded-circle {
   border-radius: 50%;
 }
+
+.logo {
+  width: 20px;
+}
+
+.enter-name {
+  position: relative;
+  width: 10%;
+  right: 29%;
+  top: 6%;
+}
+
+.results-table {
+  position: relative;
+  margin: auto;
+  width: 42%;
+  bottom: 450px;
+}

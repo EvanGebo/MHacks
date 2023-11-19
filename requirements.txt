@@ -6,3 +6,7 @@ requests
 uvicorn[standard]
 psycopg2
 datetime
+google-cloud-bigquery
+pandas
+db-dtypes
+openai
